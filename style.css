@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    background: rgb(245, 241, 234);;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col-1 {
+    background: orange;
+    flex: 0 1 calc(30% - 30px);
+    height: 30px;
+    animation-name: col-1;
+  animation-duration: 6s;
+  animation-iteration-count: infinite
+}
+.col-2 {
+    background: rgb(173, 124, 33);
+    flex: 0 1 calc(20% - 30px);
+    height: 30px;
+    animation-name: col-2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite
+}
+.col-3 {
+    background: rgb(216, 179, 110);
+    flex: 0 1 calc(20% - 30px);
+    height: 30px;
+}
+.col-5 {
+    background: rgb(204, 182, 142);
+    flex: 0 1 calc(15% - 30px);
+    height: 30px;
+}
+.col-4 {
+    background: rgb(189, 175, 148);
+    flex: 0 1 calc(15% - 30px);
+    height: 30px;
+}
+.col-6 {
+    background: rgb(92, 63, 6);
+    flex: 0 1 calc(15% - 30px);
+    height: 30px;
+    animation-name: col-6;
+    animation-duration: 6s;
+    animation-iteration-count: infinite
+}
+@keyframes col-1 {
+    0%   {background-color: orange;}
+  50%  {background-color: yellow;}
+  100% {background-color: orange;}
+}
+
+@keyframes col-6 {
+    0%  {top: 0; }
+  50%  {top: 10px;}
+  100% {top: 0; }
+}
